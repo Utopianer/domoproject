@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Anaheim);
+
+.slidervideo{
+    margin: 20px auto 50px auto;
+    width: 210px;
+    position: relative;
+    perspective: 1000px;
+    height: 297px;
+}
+#carouselContainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+}
+#carouselContainer:hover{
+    animation-play-state: paused;
+}
+#carouselContainer figure{
+    display: block;
+    position: absolute;
+    width: 186px;
+    height: 150px;
+    /* height: 116px; */
+    left: 10px;
+    top: 10px;
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+
+    overflow: hidden;
+    border: solid 5px rgb(3, 167, 232);
+    padding: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+#carouselContainer figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carouselContainer figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carouselContainer figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carouselContainer figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carouselContainer figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carouselContainer figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carouselContainer figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carouselContainer figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carouselContainer figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+/* 
+figure{
+    -webkit-filter: opacity(0.85);
+    cursor: pointer;
+    transition: all .3s ease;
+} */
+figure:hover{
+    /* -webkit-filter: opacity(1); */
+  transform: scale(1.1,1.1);
+  /* -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3); */
+}
+
+@keyframes rotation{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.stream-item-header img {
+    width: 30px;
+    margin: 5px 3px 3px 5px;
+   
+}
+.stream-item-header{
+    font-size: 10px;
+
+}
+.stream-item-header a {
+
+    font-color: #cc15c4!important;
+}
+._timestamp {
+    /* font-color: #cc15c4!important; */
+    color: crimson;
+
+}
+
+span.js-retweet-text {
+    font-size: 10px!important;
+}
+
+div.dropdown {
+    display: none;
+}
+
+img.Emoji {
+    width: 10px;
+}
+
+p.TweetTextSize {
+    font-size: 10px;
+}
+figure div {
+    font-size: 10px;
+}
