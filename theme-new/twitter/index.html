@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <title>Feature Carousel Demonstration Test</title>
+    <link rel="stylesheet" href="css/feature-carousel.css" charset="utf-8" />
+    <script src="js/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.featureCarousel.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var carousel = $("#carousel").featureCarousel({
+          // include options like this:
+          // (use quotes only for string values, and no trailing comma after last option)
+          // option: value,
+          // option: value
+        });
+
+        $("#but_prev").click(function () {
+          carousel.prev();
+        });
+        $("#but_pause").click(function () {
+          carousel.pause();
+        });
+        $("#but_start").click(function () {
+          carousel.start();
+        });
+        $("#but_next").click(function () {
+          carousel.next();
+        });
+      });
+    </script>
+  </head>
+  <body>
+  
+    
+  
+    <div class="carousel-container">
+    
+      <div id="carousel">
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/twitterbg.png"></a>
+          <div class="carousel-caption">
+            <p style="margin-bottom: 100px">
+              We've been pretty silent in here recently. Don't worry we are s We've been pretty silent in here recently. Don't worry we are s We've been pretty silent in here recently. Don't worry we are s We've been pretty silent in here recently. Don't worry we are s
+            </p>
+            <p style="float: left;">Domocoin @ domocoin</p><p style="float: right;">14 April 2018</p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/twitterbg.png"></a>
+          <div class="carousel-caption">
+            <p style="margin-bottom: 100px">
+              We've been pretty silent in here recently. Don't worry we are s We've been pretty silent in here recently. Don't worry we are s We've been pretty silent in here recently. Don't worry we are s We've been pretty silent in here recently. Don't worry we are s
+            </p>
+            <p style="float: left;">Domocoin @ domocoin</p><p style="float: right;">14 April 2018</p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="images/twitterbg.png"></a>
+          <div class="carousel-caption">
+            <p style="margin-bottom: 100px">
+              We've been pretty silent in here recently. Don't worry we are s We've been pretty silent in here recently. Don't worry we are s We've been pretty silent in here recently. Don't worry we are s We've been pretty silent in here recently. Don't worry we are s
+            </p>
+            <p style="float: left;">Domocoin @ domocoin</p><p style="float: right;">14 April 2018</p>
+          </div>
+        </div>       
+      </div>
+    
+      <div id="carousel-left"><img src="images/arrow-left.png" /></div>
+      <div id="carousel-right"><img src="images/arrow-right.png" /></div>
+    </div>
+  
+  </body>
+</html>
